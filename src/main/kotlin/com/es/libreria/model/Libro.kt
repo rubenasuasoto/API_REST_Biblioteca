@@ -11,9 +11,9 @@ data class Libro(
     @Column(nullable = false)
     var titulo: String,
     var genero: String,
-    @Column(name = "año_publicacion")
+    @Column(name = "anio_publicacion")
     @Temporal((TemporalType.DATE))
-    var añoPublicacion: LocalDate,
+    var anioPublicacion: LocalDate,
     var precio: Double,
 
     @ManyToOne

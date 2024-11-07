@@ -13,9 +13,9 @@ data class Autor(
     @Column(nullable = false)
     var nombre: String,
     var nacionalidad: String,
-    @Column(name = "año_nacimiento")
+    @Column(name = "anio_nacimiento")
     @Temporal((TemporalType.DATE))
-    var añoNacimiento: LocalDate,
+    var anioNacimiento: LocalDate,
 
     @Column(length = 1000)
     var biografia: String? = null,
