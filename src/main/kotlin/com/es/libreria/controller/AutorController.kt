@@ -4,6 +4,7 @@ import com.es.libreria.model.Autor
 import com.es.libreria.service.AutorService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -27,5 +28,14 @@ class AutorController {
         // 2º Comunico el controller con el service
         return autorService.getById(id)
 
+    }
+    fun insert(
+        @RequestBody autornuevo : Autor
+    ):Autor?{
+
+
+
+
+        return null
     }
 }

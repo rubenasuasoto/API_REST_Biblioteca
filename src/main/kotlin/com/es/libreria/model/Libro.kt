@@ -13,12 +13,11 @@ data class Libro(
     var titulo: String,
     var genero: String,
     @Column(name = "anio_publicacion")
-    @Temporal((TemporalType.DATE))
-    var anioPublicacion: LocalDate,
+    var anioPublicacion: Int,
     var precio: Double,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "autor_id", nullable = false)
     @JsonBackReference
-    var autor: Autor
+    var autor: Autor?
 )
